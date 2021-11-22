@@ -4,7 +4,19 @@ local win = DiscordLib:Window("Frozen Hub")
 
 local serv = win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
 
--- Main
+local astd = serv:Channel("All Star")
+
+astd:Button("Karma Panda", function()
+DiscordLib:Notification("Notification", "Success!", "Okay!")
+print(loadstring(game:HttpGet('https://raw.githubusercontent.com/KarmaPanda/Roblox/main/astd-aio.lua'))())
+end)
+
+astd:Seperator()
+
+astd:Button("IDK", function()
+DiscordLib:Notification("Notification", "Success!", "Okay!")
+print(loadstring(game:HttpGet("https://raw.githubusercontent.com/SuperOuro/Lua-Scripts/main/all_star_tower_defense.lua"))())
+end)
 
 local an = serv:Channel("Arsenal")
 
